@@ -7,7 +7,7 @@ raiseXReduceNotification
 			[ :each | 
 			stream nextPutAll: each lr1Item printString.
 			each == self preferredAction
-				ifTrue: [ stream nextPutAll: '	*****' ].
+				ifTrue: [ stream nextPutAll: '	***** preferred *****' ].
 			stream cr ].
 	stream cr.
 	self printPathOn: stream.
