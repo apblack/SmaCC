@@ -8,6 +8,7 @@ initialize
 	classDefinitions := Dictionary new.
 	prefix := suffix := ''.
 	isGLR := false.
+	isFGLR := false.
 	ignoreCase := false.
 	ignoredVariables := Set new.
 	annotateTokens := false

@@ -28,7 +28,8 @@
 		"annotateTokens",
 		"errorSymbol",
 		"emptySymbol",
-		"sentinelSymbol"
+		"sentinelSymbol",
+		"isFGLR"
 	],
 	"name" : "SmaCCGrammar",
 	"type" : "normal"

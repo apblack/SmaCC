@@ -41,6 +41,9 @@ directives <start>
 directives <glr>
 	: glr
 	;
+directives <fglr>
+	: fglr
+	;
 directives <ignorecase>
 	: ignorecase
 	;
@@ -161,6 +164,7 @@ Directive
 	| IdMethodLine
 	| StartLine 
 	| GLR
+	| FGLR
 	| Unicode
 	| IgnoreCase
 	| IgnoredVariables
@@ -277,6 +281,10 @@ StartingTokens
 GLR
 	: <glr>
 			{grammar isGLR: true}
+	;
+FGLR
+	: <fglr>
+			{grammar isFGLR: true}
 	;
 Unicode:
 	<unicode>

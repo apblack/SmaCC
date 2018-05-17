@@ -1,7 +1,7 @@
 action table
 idForAction: aSmaCCAction state: anInteger on: aSmaCCSymbol
 	| index preferredAction newStateIndex |
-	(aSmaCCAction isAmbiguous and: [ grammar isGLR ])
+	(aSmaCCAction isAmbiguous and: [ grammar isGLR or: [ grammar isFGLR ] ])
 		ifTrue:
 			[ index := codeGenerator
 				ambiguousTableEntryFor:
