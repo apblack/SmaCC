@@ -1,0 +1,3 @@
+generated
+aClass
+	^ aClass

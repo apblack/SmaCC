@@ -1,0 +1,3 @@
+generated
+rootToken
+	^ rootToken

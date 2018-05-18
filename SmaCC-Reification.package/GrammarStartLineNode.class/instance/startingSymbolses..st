@@ -1,0 +1,3 @@
+generated
+startingSymbolses: anOrderedCollection
+	startingSymbolses := anOrderedCollection

@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SmaCCScanner",
+	"category" : "SmaCC-Reification",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"parseSourceSelector"
+	],
+	"name" : "SmaCCGrammarScanner",
+	"type" : "normal"
+}

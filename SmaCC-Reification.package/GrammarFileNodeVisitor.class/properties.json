@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SmaCCParseNodeVisitor",
+	"category" : "SmaCC-Reification",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "GrammarFileNodeVisitor",
+	"type" : "normal"
+}

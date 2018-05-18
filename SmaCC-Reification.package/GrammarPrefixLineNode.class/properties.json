@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "GrammarFileNode",
+	"category" : "SmaCC-Reification-AST",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"prefixToken",
+		"prefix"
+	],
+	"name" : "GrammarPrefixLineNode",
+	"type" : "normal"
+}

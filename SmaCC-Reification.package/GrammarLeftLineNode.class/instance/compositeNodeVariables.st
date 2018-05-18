@@ -1,0 +1,3 @@
+generated
+compositeNodeVariables
+	^ #(#leftTokenses #rules)

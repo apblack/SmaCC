@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "GrammarFileNode",
+	"category" : "SmaCC-Reification-AST",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"leftParenToken",
+		"terms",
+		"orTokens",
+		"rightParenToken"
+	],
+	"name" : "GrammarGroupTermNode",
+	"type" : "normal"
+}

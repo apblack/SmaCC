@@ -1,0 +1,3 @@
+generated
+classLeftToken
+	^ classLeftToken
