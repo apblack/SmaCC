@@ -1,0 +1,3 @@
+generated
+percentpureMinusparserToken: aSmaCCToken
+	percentpureMinusparserToken := aSmaCCToken

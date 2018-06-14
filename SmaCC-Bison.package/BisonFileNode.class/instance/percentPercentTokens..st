@@ -1,0 +1,3 @@
+generated
+percentPercentTokens: anOrderedCollection
+	percentPercentTokens := anOrderedCollection

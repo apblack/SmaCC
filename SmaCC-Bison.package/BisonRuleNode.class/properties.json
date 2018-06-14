@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "BisonFileNode",
+	"category" : "SmaCC-Bison",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"production",
+		"rhs",
+		"colonToken",
+		"semicolonToken"
+	],
+	"name" : "BisonRuleNode",
+	"type" : "normal"
+}

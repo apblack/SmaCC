@@ -1,0 +1,3 @@
+generated
+tokenVariables
+	^ #(#percentleftToken #epilogue)

@@ -1,0 +1,3 @@
+generated
+percentnameMinusprefixToken: aSmaCCToken
+	percentnameMinusprefixToken := aSmaCCToken
