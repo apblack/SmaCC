@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "BisonFileNode",
+	"category" : "SmaCC-Bison",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"percentparseMinusparamToken",
+		"rightBraceToken",
+		"symbols",
+		"leftCurlyBraceToken"
+	],
+	"name" : "BisonParseParamDirectiveNode",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+generated
+percentlexMinusparamToken: aSmaCCToken
+	percentlexMinusparamToken := aSmaCCToken

@@ -1,0 +1,3 @@
+generated
+percentLeftBraceToken
+	^ percentLeftBraceToken
