@@ -1,3 +1,3 @@
 generated
 tokenVariables
-	^ #(#symbolName #productionToken #semicolonToken)
+	^ #(#productionToken #semicolonToken)

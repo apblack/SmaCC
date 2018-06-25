@@ -1,3 +1,5 @@
 generated
 startingSymbolses: anOrderedCollection
-	startingSymbolses := anOrderedCollection
+	self setParents: self startingSymbolses to: nil.
+	startingSymbolses := anOrderedCollection.
+	self setParents: self startingSymbolses to: self

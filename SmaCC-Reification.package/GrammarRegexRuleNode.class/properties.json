@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"state",
 		"token",
 		"productionToken",
 		"regex",

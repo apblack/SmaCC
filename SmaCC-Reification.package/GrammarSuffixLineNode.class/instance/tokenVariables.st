@@ -1,3 +1,3 @@
 generated
 tokenVariables
-	^ #(#suffixToken #suffix)
+	^ #(#suffixToken)

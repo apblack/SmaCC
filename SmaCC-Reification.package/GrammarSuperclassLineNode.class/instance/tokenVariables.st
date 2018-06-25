@@ -1,3 +1,3 @@
 generated
 tokenVariables
-	^ #(#hierarchyToken #superclass #leftParenToken #rightParenToken)
+	^ #(#hierarchyToken #leftParenToken #rightParenToken)

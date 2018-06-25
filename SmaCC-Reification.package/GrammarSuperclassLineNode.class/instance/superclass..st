@@ -1,3 +1,7 @@
 generated
-superclass: aSmaCCToken
-	superclass := aSmaCCToken
+superclass: aGrammarSymbolNode
+	self superclass notNil
+		ifTrue: [ self superclass parent: nil ].
+	superclass := aGrammarSymbolNode.
+	self superclass notNil
+		ifTrue: [ self superclass parent: self ]

@@ -1,3 +1,3 @@
 generated
 tokenVariables
-	^ #(#rootToken #root)
+	^ #(#rootToken)

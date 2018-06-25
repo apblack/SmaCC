@@ -141,9 +141,9 @@ File
 	;
 	
 Rule 
-	: ProductionRule {{ProductionRule}}
+	: ProductionRule
 	| DirectiveLine
-	| RegexRule {{RegexRule}}
+	| PrefixedRegexRule
 	;
 	
 # Directives
@@ -189,23 +189,23 @@ ExcludeStatesLine
 	;
 
 RootClassLine
-	: <root> <symbolname> 'root' {{}}
+	: <root> Symbol 'root' {{}}
 	;
 	
 SuperclassLine
-	: <hierarchy> <symbolname> 'superclass' ""("" <symbolname> 'classes' *  "")"" {{}}
+	: <hierarchy> Symbol 'superclass' ""("" Symbol 'classes' *  "")"" {{}}
 	;
 	
 AttributesLine
-	: <attributes> <symbolname> 'aClass' ""(""  <symbolname> 'ivars' * "")"" {{}}
+	: <attributes> Symbol 'aClass' ""(""  Symbol 'ivars' * "")"" {{}}
 	;
 
 PrefixLine
-	: <prefix> <symbolname> 'prefix' {{}}
+	: <prefix> Symbol 'prefix' {{}}
 	;
 	
 SuffixLine
-	: <suffix> <symbolname> 'suffix' {{}}
+	: <suffix> Symbol 'suffix' {{}}
 	;
 	
 LeftLine
@@ -225,7 +225,7 @@ IdMethodLine
 	;
 	
 StartLine
-	: <start> <symbolname> 'startingSymbols' + {{}}
+	: <start> Symbol 'startingSymbols' + {{}}
 	;
 
 GLR
@@ -241,7 +241,7 @@ Unicode
 	;
 	
 IgnoredVariables
-	: EndDirective <ignorevariables> (<symbolname> 'variables')+ {{}}
+	: EndDirective <ignorevariables> (Symbol 'variables')+ {{}}
 	;
 
 IgnoreCase
@@ -253,8 +253,13 @@ AnnotateTokens
 	;
 	
 # Scanner
+PrefixedRegexRule
+	: RegexRule 'scannerRule' {{}}
+	| Symbol 'state' PrefixedRegexRule 'prefixedRule' {{}}
+	;
+
 RegexRule 
-	: Symbol 'state' ? StartRegex <tokenname> 'token' <production> Regex 'regex' EndRegex <semicolon> {{}}
+	: StartRegex <tokenname> 'token' <production> Regex 'regex' EndRegex <semicolon> {{}}
 	;
 	
 StartRegex
@@ -291,7 +296,7 @@ RegexTerm
 
 # Parser 
 ProductionRule
-	: <symbolname> 'symbolName' StartProduction <production> RightHandSide 'rhs' EndProduction <semicolon> {{}}
+	: Symbol 'lhs' StartProduction <production> RightHandSide 'rhs' EndProduction <semicolon> {{}}
 	;
 	
 StartProduction
