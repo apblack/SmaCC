@@ -69,7 +69,9 @@ baseline: spec
 					with: [ spec requires: 'SmaCC-GLR-Runtime' ];
 				package: 'SmaCC-DelphiForms'
 					with: [ spec requires: 'SmaCC-GLR-Runtime' ];
-				package: 'SmaCC-IDL' with: [ spec requires: 'SmaCC-Runtime' ].
+				package: 'SmaCC-IDL' with: [ spec requires: 'SmaCC-Runtime' ];
+				package: 'SmaCC-Reification' 
+					with: [ spec requires: #('SmaCC-Smalltalk-Parser' 'SmaCC-Runtime' 'SmaCC-Java') ].
 			spec
 				group: 'default' with: #('Tools');
 				group: 'Runtime' with: #('SmaCC-GLR-Runtime');
@@ -88,4 +90,7 @@ baseline: spec
 					with:
 					#('SmaCC-IDL' 'SmaCC-CSharp' 'SmaCC-Cucumber' 'SmaCC-Swift' 'SmaCC-Delphi' 'SmaCC-DelphiForms' 'SmaCC-Python' 'SmaCC-Javascript-Parser');
 				group: 'Tests'
-					with: #('SmaCC-Tests' 'SmaCC-Rewrite-Engine-Tests' 'SmaCC-Python-Tests') ]
+					with: #('SmaCC-Tests' 'SmaCC-Rewrite-Engine-Tests' 'SmaCC-Python-Tests');
+				group: 'Reification'
+					with: #('SmaCC-Reification')
+		]
